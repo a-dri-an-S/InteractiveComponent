@@ -1,7 +1,10 @@
+import CardInteractive from './CardInteract';
+import "../styles/Card.css";
+
 const Card = () => {
     return (
-        <section>
-
+        <section className="main-card">
+            <CardInteractive />
         </section>
     );
 }

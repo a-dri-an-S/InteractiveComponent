@@ -1,0 +1,7 @@
+.main-card {
+    width: 330px;
+    height: 350px;
+    background-color: var(--dark-blue);
+    border-radius: 25px;
+    padding:  36px 36px;
+}
