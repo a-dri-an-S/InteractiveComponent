@@ -52,6 +52,16 @@
     color: var(--light-grey);
 }
 
+.card-interactive-scale-btn:active {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.active {
+    background-color: var(--light-grey);
+    color: var(--white);
+}
+
 .card-interactive-submit-btn {
     height: 50px;
     border-radius: 25px;
@@ -61,5 +71,9 @@
     background-color: var(--orange);
     color: var(--white);
     border: none;
+}
 
+.card-interactive-submit-btn:active {
+    background-color: var(--white);
+    color: var(--orange);
 }

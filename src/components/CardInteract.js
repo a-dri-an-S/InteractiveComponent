@@ -1,7 +1,8 @@
 import Star from '../assets/star.svg'
 import "../styles/CardInteractive.css"
 
-const CardInteract = () => {
+const CardInteract = ({ ratingSelect, rating }) => {
+
     return (
         <div className="card-interactive">
             <div className="card-star">
@@ -16,11 +17,27 @@ const CardInteract = () => {
                 </p>
             </div>
             <div className="card-interactive-scale">
-                <button className="card-interactive-scale-btn">1</button>
-                <button className="card-interactive-scale-btn">2</button>
-                <button className="card-interactive-scale-btn">3</button>
-                <button className="card-interactive-scale-btn">4</button>
-                <button className="card-interactive-scale-btn">5</button>
+                <button 
+                    className={`card-interactive-scale-btn ${rating === 1 ? "active" : ""}`}
+                    onClick={() => ratingSelect(1)}
+                >1</button>
+                <button 
+                    className={`card-interactive-scale-btn ${rating === 2 ? "active" : ""}`}
+                    onClick={() => ratingSelect(2)}
+                >2</button>
+                <button 
+                    className={`card-interactive-scale-btn ${rating === 3 ? "active" : ""}`}
+                    onClick={() => ratingSelect(3)}
+                >3</button>
+                <button 
+                    className={`card-interactive-scale-btn ${rating === 4 ? "active" : ""}`}
+                    onClick={() => ratingSelect(4)}
+                >4</button>
+                <button 
+                    className={`card-interactive-scale-btn ${rating === 5 ? "active" : ""}`}
+                    onClick={() => ratingSelect(5)}
+                >5</button>
+                
             </div>
             <button className="card-interactive-submit-btn">SUBMIT</button>
         </div>
