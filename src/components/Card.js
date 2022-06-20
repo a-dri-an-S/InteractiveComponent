@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import CardInteractive from './CardInteract';
+import CardSubmit from "./CardSubmit";
 import "../styles/Card.css";
 
 const Card = () => {
@@ -10,10 +11,18 @@ const Card = () => {
 
     return (
         <section className="main-card">
-            <CardInteractive 
+            {
+                ratingSubmit ? 
+                <CardSubmit 
+                    rating={ratingSelect}
+                /> :
+                <CardInteractive 
                 rating={ratingSelect}
                 ratingSelect={setRatingSelect}
+                ratingSubmit={setRatingSubmit}
             />
+            }
+            
         </section>
     );
 }

@@ -1,7 +1,7 @@
 import Star from '../assets/star.svg'
 import "../styles/CardInteractive.css"
 
-const CardInteract = ({ ratingSelect, rating }) => {
+const CardInteract = ({ ratingSelect, rating, ratingSubmit }) => {
 
     return (
         <div className="card-interactive">
@@ -39,7 +39,10 @@ const CardInteract = ({ ratingSelect, rating }) => {
                 >5</button>
                 
             </div>
-            <button className="card-interactive-submit-btn">SUBMIT</button>
+            <button 
+                className="card-interactive-submit-btn"
+                onClick={() => ratingSubmit(true)}    
+            >SUBMIT</button>
         </div>
     );
 }

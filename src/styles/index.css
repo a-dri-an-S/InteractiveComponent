@@ -27,6 +27,18 @@ button {
   font-family: 'Overpass', sans-serif;
 }
 
+h1 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 28px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

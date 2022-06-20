@@ -1,0 +1,32 @@
+.card-submit {
+    width: 330px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.card-submit-img {
+    width: 180px;
+    height: auto;
+}
+
+.card-submit-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    width: 220px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.card-submit-rating-text {
+    color: var(--orange);
+}
+
+.card-submit-text {
+    font-size: 14.5px;
+}
